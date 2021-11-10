@@ -12,28 +12,51 @@
     <form action="">
         <label for="name">
             <span></span>
-             <input type="name" id="name" placeholder="Your Name">
+             <input type="name" id="name" placeholder="Tu Nombre" autocomplete="name" required>
+        </label>
+         <label for="username">
+            <span></span>
+             <input type="username" id="username" placeholder="Nombre de Usuario" autocomplete="username" required>
         </label>
         <label for="email">
             <span></span>
-             <input type="email" id="email" placeholder="example@email.com">
+             <input type="email" id="email" placeholder="usuario@ejemplo.net" autocomplete="email" required>
         </label>
         <label for="num">
             <span></span>
-             <input type="number" id="num" placeholder="Telefono">
+             <input type="number" id="num" placeholder="Telefono" autocomplete="tel" required>
         </label>
         <label for="country">
             <span></span>
-             <input type="country" id="country" placeholder="Pais">
+        <input list="country" type="text" placeholder="MX" autocomplete="country" required>
+        <datalist id="country">
+            <option value="MX"></option>
+            <option value="EUA"></option>
+            <option value="CA"></option>
+        </datalist>
+        </label>
+        <label for="countryName">
+            <span></span>
+            <input list="countryName" type="text" placeholder="México" autocomplete="country-name" required>
+            <datalist id="countryName">
+            <option value="México"></option>
+            <option value="Estados Unidos"></option>
+            <option value="Canadá"></option>
+        </datalist>
+        </label>
+        <label for="postalCode">
+            <span></span>
+             <input type="text" id="postalCode" placeholder="Codigo Postal" autocomplete="postal-code" required>
         </label>
         <label for="date">
             <span></span>
-             <input type="datetime" id="date" >
+             <input type="datetime-local" id="date" required>
         </label>
         <label for="password">
             <span></span>
-             <input type="password" id="password" placeholder="*******">
+             <input type="password" id="password" placeholder="*******" required>
         </label>
+        <input type="submit">
     </form>
 </body>
 </html>
